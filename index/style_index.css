@@ -1,53 +1,18 @@
 @charset "utf-8";
 
 
-/* ===============================
-   RESPONSIVE DISPLAY SETTINGS
-================================ */
+*{
 
-
-@media screen and (min-width:660px){
-
-.desktop{
-display:block;
-}
-
-.mobile{
-display:none;
-}
+box-sizing:border-box;
 
 }
 
 
-
-@media screen and (max-width:660px){
-
-.desktop{
-display:none;
-}
-
-.mobile{
-display:block;
-}
-
-}
-
-
-
-
-
-
-/* ===============================
-   GLOBAL STYLE
-================================ */
-
-
-body {
+body{
 
 
 margin:0;
 
-padding:0;
 
 background-image:url("../gallery/bg_image.png");
 
@@ -58,19 +23,12 @@ background-attachment:fixed;
 
 font-family:
 "Gill Sans",
-"Gill Sans MT",
-"Myriad Pro",
-"DejaVu Sans Condensed",
 Helvetica,
 Arial,
 sans-serif;
 
 
-font-weight:400;
-
-font-size:16px;
-
-line-height:22px;
+color:#222;
 
 
 }
@@ -78,23 +36,29 @@ line-height:22px;
 
 
 
-/* ===============================
-   HEADER & NAVIGATION
-================================ */
+
+/* HEADER */
 
 
-header {
+header{
 
 
-padding:0;
+width:90%;
 
-width:98%;
+margin:50px auto 0;
 
-margin-top:50px;
 
-margin-right:10px;
+}
 
-margin-left:auto;
+
+.header-container{
+
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
 
 
 }
@@ -103,53 +67,10 @@ margin-left:auto;
 
 .logo{
 
-display:block;
+width:200px;
 
 }
 
-
-
-nav {
-
-
-float:right;
-
-margin-top:8px;
-
-
-}
-
-
-
-nav a {
-
-
-font-size:18px;
-
-font-family:
-Helvetica,
-Arial,
-sans-serif;
-
-
-color:black;
-
-font-weight:bold;
-
-text-decoration:none;
-
-
-}
-
-
-
-nav a:hover {
-
-
-color:gray;
-
-
-}
 
 
 
@@ -164,86 +85,92 @@ gap:30px;
 }
 
 
+.navbar a{
+
+
+color:black;
+
+font-size:18px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+
+}
 
 
 
-/* ===============================
-   PORTFOLIO INTRODUCTION
-================================ */
+.navbar a:hover{
+
+color:gray;
+
+}
 
 
-.portfolio-intro{
+
+
+
+/* HERO */
+
+
+.hero{
+
+
+text-align:center;
+
+width:80%;
+
+margin:60px auto 40px;
+
+
+}
+
+
+
+.hero h1{
+
+
+font-size:42px;
+
+color:#54210F;
+
+
+}
+
+
+
+.hero p{
+
+
+font-size:20px;
+
+
+}
+
+
+
+
+
+/* PROJECTS */
+
+
+.projects{
 
 
 width:85%;
 
-margin:50px auto 30px auto;
-
-text-align:center;
-
-
-}
-
-
-
-.portfolio-intro h1{
-
-
-margin-top:0;
-
-color:#54210F;
-
-font-size:36px;
-
-
-}
-
-
-
-.portfolio-intro p{
-
-
-font-size:18px;
-
-max-width:850px;
-
 margin:auto;
-
-line-height:1.6;
-
-
-}
-
-
-
-
-
-
-/* ===============================
-   PROJECT GRID
-================================ */
-
-
-#page-content{
 
 
 display:grid;
 
 
 grid-template-columns:
-repeat(auto-fit,minmax(350px,1fr));
+repeat(2,1fr);
 
 
-gap:35px;
-
-
-width:85%;
-
-
-margin:0 auto;
-
-
-padding:20px;
+gap:40px;
 
 
 }
@@ -252,47 +179,25 @@ padding:20px;
 
 
 
-
-
-/* ===============================
-   PROJECT CARDS
-================================ */
-
-
 .project-card{
 
 
-background:
-rgba(255,255,255,0.88);
+background:white;
 
 
-border-radius:20px;
+border-radius:18px;
 
 
 overflow:hidden;
 
 
 box-shadow:
-0 6px 15px rgba(0,0,0,0.18);
+0 8px 20px rgba(0,0,0,.15);
 
 
-transition:
-transform .3s ease,
-box-shadow .3s ease;
+display:flex;
 
-
-}
-
-
-
-.project-card:hover{
-
-
-transform:translateY(-8px);
-
-
-box-shadow:
-0 12px 25px rgba(0,0,0,0.25);
+flex-direction:column;
 
 
 }
@@ -306,14 +211,27 @@ box-shadow:
 
 width:100%;
 
-
 height:260px;
-
 
 object-fit:cover;
 
 
-display:block;
+}
+
+
+
+
+.project-info{
+
+
+padding:28px;
+
+
+display:flex;
+
+flex-direction:column;
+
+flex-grow:1;
 
 
 }
@@ -321,62 +239,28 @@ display:block;
 
 
 
-
-
-
-/* ===============================
-   PROJECT CONTENT
-================================ */
-
-
-
-.project-content{
-
-
-padding:25px;
-
-
-}
-
-
-
-
-
-.project-content h2{
-
-
-margin-top:0;
-
-margin-bottom:8px;
+.project-info h2{
 
 
 color:#54210F;
 
-
 font-size:28px;
+
+margin:0 0 5px;
 
 
 }
 
 
 
-
-.project-content h3{
-
-
-margin-top:0;
-
-
-margin-bottom:18px;
-
-
-font-size:17px;
+.project-info h3{
 
 
 font-style:italic;
 
-
 font-weight:400;
+
+margin-top:0;
 
 
 }
@@ -384,115 +268,84 @@ font-weight:400;
 
 
 
-.project-content p{
+.project-info p{
 
 
 line-height:1.6;
 
 
-margin-bottom:20px;
-
-
 }
 
 
 
 
-.project-content span{
-
-
-display:block;
+.skills{
 
 
 color:#536018;
 
-
-font-size:14px;
-
-
 font-weight:bold;
 
-
-margin-bottom:25px;
+margin:20px 0;
 
 
 }
 
 
 
+.project-info a{
 
 
-.project-content a{
-
-
-display:inline-block;
+margin-top:auto;
 
 
 background:#54210F;
 
-
 color:white;
 
 
-padding:12px 22px;
+padding:12px 20px;
 
 
 border-radius:25px;
 
 
-font-weight:bold;
+text-align:center;
 
 
 text-decoration:none;
 
 
-transition:.3s;
-
-
 }
 
 
 
-
-
-.project-content a:hover{
+.project-info a:hover{
 
 
 background:#536018;
 
 
-color:white;
-
-
 }
 
 
 
 
 
-
-
-/* ===============================
-   FOOTER
-================================ */
+/* FOOTER */
 
 
 footer{
 
 
-width:100%;
-
-
-margin-top:40px;
-
-
-margin-bottom:10px;
-
-
 text-align:center;
+
+margin:50px 0 20px;
 
 
 }
+
+
 
 
 
@@ -501,7 +354,6 @@ footer a{
 
 color:black;
 
-
 font-weight:bold;
 
 
@@ -509,34 +361,18 @@ font-weight:bold;
 
 
 
-footer a:hover{
+
+/* MOBILE */
 
 
-color:gray;
-
-
-}
-
+@media(max-width:800px){
 
 
 
+.header-container{
 
 
-/* ===============================
-   MOBILE OPTIMIZATION
-================================ */
-
-
-@media screen and (max-width:660px){
-
-
-
-header{
-
-
-margin-top:25px;
-
-width:95%;
+flex-direction:column;
 
 
 }
@@ -546,41 +382,21 @@ width:95%;
 .navbar{
 
 
-gap:15px;
+margin-top:20px;
+
+flex-wrap:wrap;
+
+justify-content:center;
 
 
 }
 
 
 
-nav a{
+.hero h1{
 
 
-font-size:15px;
-
-
-}
-
-
-
-
-.portfolio-intro{
-
-
-width:90%;
-
-
-margin-top:35px;
-
-
-}
-
-
-
-.portfolio-intro h1{
-
-
-font-size:28px;
+font-size:30px;
 
 
 }
@@ -588,55 +404,24 @@ font-size:28px;
 
 
 
-#page-content{
-
-
-width:90%;
-
-
-padding:10px;
+.projects{
 
 
 grid-template-columns:1fr;
 
-
-gap:25px;
+width:90%;
 
 
 }
-
-
-
 
 
 .project-card img{
 
 
-height:200px;
+height:220px;
 
 
 }
-
-
-
-.project-content{
-
-
-padding:20px;
-
-
-}
-
-
-
-.project-content h2{
-
-
-font-size:24px;
-
-
-}
-
 
 
 }
