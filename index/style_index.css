@@ -19,9 +19,17 @@ body {
     font-family:
     "Gill Sans",
     "Gill Sans MT",
+    "Myriad Pro",
+    "DejaVu Sans Condensed",
     Helvetica,
     Arial,
     sans-serif;
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 22px;
 
     color: #222;
 
@@ -43,6 +51,7 @@ header {
 }
 
 
+
 .header-container {
 
     display: flex;
@@ -54,11 +63,13 @@ header {
 }
 
 
+
 .logo {
 
     width: 200px;
 
 }
+
 
 
 
@@ -74,9 +85,11 @@ header {
 
 .navbar a {
 
-    color: black;
-
     font-size: 18px;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    color: black;
 
     font-weight: bold;
 
@@ -91,6 +104,7 @@ header {
     color: gray;
 
 }
+
 
 
 
@@ -114,7 +128,7 @@ header {
 
 .hero h1 {
 
-    color: #54210F;
+    color: black;
 
     font-size: 42px;
 
@@ -131,7 +145,6 @@ header {
     line-height: 1.5;
 
 }
-
 
 
 
@@ -160,7 +173,6 @@ header {
 
 
 
-
 /* =========================
    PROJECT CARD
 ========================= */
@@ -181,8 +193,9 @@ header {
 
     flex-direction: column;
 
-    transition: transform .3s ease,
-                box-shadow .3s ease;
+    transition:
+    transform .3s ease,
+    box-shadow .3s ease;
 
 }
 
@@ -223,14 +236,6 @@ header {
 
 
 
-/*
-   This creates a consistent frame:
-   - no stretching
-   - no empty spaces
-   - professional portfolio look
-*/
-
-
 
 
 
@@ -258,7 +263,7 @@ header {
 
     color:#54210F;
 
-    font-size: 28px;
+    font-size:28px;
 
     margin-top:0;
 
@@ -298,6 +303,7 @@ header {
 
 
 
+
 .skills {
 
     color:#536018;
@@ -312,6 +318,7 @@ header {
 
 
 
+
 /* =========================
    CTA BUTTON
 ========================= */
@@ -321,7 +328,7 @@ header {
 
     margin-top:auto;
 
-    background:#B65C45;
+    background:black;
 
     color:white;
 
@@ -344,7 +351,7 @@ header {
 
 .project-info a:hover {
 
-    background:#536018;
+    background:#54210F;
 
     color:white;
 
@@ -361,6 +368,8 @@ header {
 
 
 footer {
+
+    width:100%;
 
     text-align:center;
 
@@ -380,16 +389,24 @@ footer a {
 
 
 
+footer a:hover {
+
+    color:gray;
+
+}
+
+
 
 
 
 
 /* =========================
-   MOBILE
+   MOBILE RESPONSIVE
 ========================= */
 
 
 @media(max-width:800px){
+
 
 
 .header-container {
@@ -412,9 +429,25 @@ footer a {
 
 
 
+.hero {
+
+    width:90%;
+
+}
+
+
+
 .hero h1 {
 
     font-size:30px;
+
+}
+
+
+
+.hero p {
+
+    font-size:17px;
 
 }
 
