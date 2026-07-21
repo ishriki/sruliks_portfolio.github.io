@@ -1,150 +1,134 @@
 @charset "utf-8";
 
 
-*{
-
-box-sizing:border-box;
-
+* {
+    box-sizing: border-box;
 }
 
 
-body{
+body {
 
+    margin: 0;
 
-margin:0;
+    background-image: url("../gallery/bg_image.png");
 
+    background-size: cover;
 
-background-image:url("../gallery/bg_image.png");
+    background-attachment: fixed;
 
-background-size:cover;
+    font-family:
+    "Gill Sans",
+    "Gill Sans MT",
+    Helvetica,
+    Arial,
+    sans-serif;
 
-background-attachment:fixed;
-
-
-font-family:
-"Gill Sans",
-Helvetica,
-Arial,
-sans-serif;
-
-
-color:#222;
-
+    color: #222;
 
 }
 
 
 
+/* =========================
+   HEADER
+========================= */
 
 
-/* HEADER */
+header {
 
+    width: 90%;
 
-header{
-
-
-width:90%;
-
-margin:50px auto 0;
-
+    margin: 50px auto 0;
 
 }
 
 
-.header-container{
+.header-container {
 
+    display: flex;
 
-display:flex;
+    justify-content: space-between;
 
-justify-content:space-between;
-
-align-items:center;
-
+    align-items: center;
 
 }
 
 
+.logo {
 
-.logo{
-
-width:200px;
+    width: 200px;
 
 }
 
 
 
+.navbar {
 
-.navbar{
+    display: flex;
 
-
-display:flex;
-
-gap:30px;
-
-
-}
-
-
-.navbar a{
-
-
-color:black;
-
-font-size:18px;
-
-font-weight:bold;
-
-text-decoration:none;
-
+    gap: 30px;
 
 }
 
 
 
-.navbar a:hover{
+.navbar a {
 
-color:gray;
+    color: black;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+
+
+.navbar a:hover {
+
+    color: gray;
 
 }
 
 
 
 
-
-/* HERO */
-
-
-.hero{
+/* =========================
+   HERO SECTION
+========================= */
 
 
-text-align:center;
+.hero {
 
-width:80%;
+    width: 80%;
 
-margin:60px auto 40px;
+    margin: 60px auto 40px;
 
-
-}
-
-
-
-.hero h1{
-
-
-font-size:42px;
-
-color:#54210F;
-
+    text-align: center;
 
 }
 
 
 
-.hero p{
+.hero h1 {
+
+    color: #54210F;
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+}
 
 
-font-size:20px;
 
+.hero p {
+
+    font-size: 20px;
+
+    line-height: 1.5;
 
 }
 
@@ -152,26 +136,23 @@ font-size:20px;
 
 
 
-/* PROJECTS */
+
+/* =========================
+   PROJECT GRID
+========================= */
 
 
-.projects{
+.projects {
 
+    width: 85%;
 
-width:85%;
+    margin: auto;
 
-margin:auto;
+    display: grid;
 
+    grid-template-columns: repeat(2, 1fr);
 
-display:grid;
-
-
-grid-template-columns:
-repeat(2,1fr);
-
-
-gap:40px;
-
+    gap: 40px;
 
 }
 
@@ -179,26 +160,40 @@ gap:40px;
 
 
 
-.project-card{
+
+/* =========================
+   PROJECT CARD
+========================= */
 
 
-background:white;
+.project-card {
+
+    background: rgba(255,255,255,0.92);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.15);
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+
+}
 
 
-border-radius:18px;
 
+.project-card:hover {
 
-overflow:hidden;
+    transform: translateY(-8px);
 
-
-box-shadow:
-0 8px 20px rgba(0,0,0,.15);
-
-
-display:flex;
-
-flex-direction:column;
-
+    box-shadow:
+    0 15px 30px rgba(0,0,0,0.20);
 
 }
 
@@ -206,125 +201,85 @@ flex-direction:column;
 
 
 
-.project-card img{
+
+/* =========================
+   PROJECT IMAGES
+========================= */
 
 
-width:100%;
+.project-card img {
 
-height:260px;
+    width: 100%;
 
-object-fit:cover;
+    height: 280px;
 
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+}
+
+
+
+/*
+   This creates a consistent frame:
+   - no stretching
+   - no empty spaces
+   - professional portfolio look
+*/
+
+
+
+
+
+/* =========================
+   PROJECT CONTENT
+========================= */
+
+
+.project-info {
+
+    padding: 28px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-grow: 1;
 
 }
 
 
 
 
-.project-info{
+.project-info h2 {
 
+    color:#54210F;
 
-padding:28px;
+    font-size: 28px;
 
+    margin-top:0;
 
-display:flex;
-
-flex-direction:column;
-
-flex-grow:1;
-
+    margin-bottom:8px;
 
 }
 
 
 
 
-.project-info h2{
+.project-info h3 {
 
+    font-size:17px;
 
-color:#54210F;
+    font-style:italic;
 
-font-size:28px;
+    font-weight:400;
 
-margin:0 0 5px;
+    margin-top:0;
 
-
-}
-
-
-
-.project-info h3{
-
-
-font-style:italic;
-
-font-weight:400;
-
-margin-top:0;
-
-
-}
-
-
-
-
-.project-info p{
-
-
-line-height:1.6;
-
-
-}
-
-
-
-
-.skills{
-
-
-color:#536018;
-
-font-weight:bold;
-
-margin:20px 0;
-
-
-}
-
-
-
-.project-info a{
-
-
-margin-top:auto;
-
-
-background:#54210F;
-
-color:white;
-
-
-padding:12px 20px;
-
-
-border-radius:25px;
-
-
-text-align:center;
-
-
-text-decoration:none;
-
-
-}
-
-
-
-.project-info a:hover{
-
-
-background:#536018;
-
+    margin-bottom:18px;
 
 }
 
@@ -332,16 +287,24 @@ background:#536018;
 
 
 
-/* FOOTER */
+.project-info p {
+
+    line-height:1.6;
+
+    margin-bottom:20px;
+
+}
 
 
-footer{
 
 
-text-align:center;
+.skills {
 
-margin:50px 0 20px;
+    color:#536018;
 
+    font-weight:bold;
+
+    margin-bottom:25px;
 
 }
 
@@ -349,79 +312,138 @@ margin:50px 0 20px;
 
 
 
-footer a{
+/* =========================
+   CTA BUTTON
+========================= */
 
 
-color:black;
+.project-info a {
 
-font-weight:bold;
+    margin-top:auto;
 
+    background:#B65C45;
+
+    color:white;
+
+    padding:13px 24px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
 
 }
 
 
 
 
-/* MOBILE */
+.project-info a:hover {
+
+    background:#536018;
+
+    color:white;
+
+}
+
+
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer {
+
+    text-align:center;
+
+    margin:50px 0 20px;
+
+}
+
+
+
+footer a {
+
+    color:black;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MOBILE
+========================= */
 
 
 @media(max-width:800px){
 
 
+.header-container {
 
-.header-container{
-
-
-flex-direction:column;
-
+    flex-direction:column;
 
 }
 
 
 
-.navbar{
+.navbar {
 
+    margin-top:20px;
 
-margin-top:20px;
+    flex-wrap:wrap;
 
-flex-wrap:wrap;
-
-justify-content:center;
-
+    justify-content:center;
 
 }
 
 
 
-.hero h1{
+.hero h1 {
 
-
-font-size:30px;
-
+    font-size:30px;
 
 }
 
 
 
+.projects {
 
-.projects{
+    width:90%;
 
-
-grid-template-columns:1fr;
-
-width:90%;
-
+    grid-template-columns:1fr;
 
 }
 
 
-.project-card img{
 
+.project-card img {
 
-height:220px;
-
+    height:220px;
 
 }
+
+
+
+.project-info {
+
+    padding:22px;
+
+}
+
 
 
 }
