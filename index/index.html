@@ -3,29 +3,34 @@
 
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4FZ7TBWH7V"></script>
-
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-4FZ7TBWH7V');
-</script>
-
-
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Srulik Shriki</title>
+<title>Srulik Shriki | UX/UI Portfolio</title>
 
 
-<link rel="stylesheet" href="css_index.css" type="text/css">
+<link rel="stylesheet" href="css_index.css">
 
 
-<link rel="icon" href="../gallery/logo_favicon.jpg" type="image/png">
+<link rel="icon" href="../gallery/logo_favicon.jpg">
+
+
+<!-- Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4FZ7TBWH7V"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+gtag('config','G-4FZ7TBWH7V');
+
+</script>
 
 
 </head>
@@ -36,11 +41,13 @@ gtag('config', 'G-4FZ7TBWH7V');
 
 <header>
 
-<img src="../gallery/logo.jpg" 
-alt="Company Logo" 
-width="200px" 
-height="auto" 
-class="logo">
+
+<div class="header-container">
+
+
+<img src="../gallery/logo.jpg"
+class="logo"
+alt="Srulik Shriki Logo">
 
 
 <nav class="navbar">
@@ -63,22 +70,28 @@ Blog
 </nav>
 
 
+</div>
+
+
 </header>
 
 
 
 
 
-<section class="portfolio-intro">
+<section class="hero">
+
 
 <h1>
-Selected UX/UI & Digital Design Projects
+UX/UI & Digital Design Portfolio
 </h1>
 
 
 <p>
-A collection of user-centered design projects focused on UX research,
-branding, digital experiences, and solving real-world problems through design.
+
+Designing meaningful experiences through research,
+strategy, branding, and technology.
+
 </p>
 
 
@@ -88,24 +101,19 @@ branding, digital experiences, and solving real-world problems through design.
 
 
 
-<div id="page-content">
+
+<main class="projects">
 
 
 
 
 
-<!-- Morning Moods -->
+<article class="project-card">
+
+<img src="../gallery/morning_moods.jpg">
 
 
-<section class="project-card">
-
-
-<img src="../gallery/morning_moods.jpg" 
-alt="Morning Moods UX Project">
-
-
-<div class="project-content">
-
+<div class="project-info">
 
 <h2>
 Morning Moods
@@ -113,56 +121,47 @@ Morning Moods
 
 
 <h3>
-UX Persona Development & Market Research
+UX Research & Persona Development
 </h3>
 
 
-
 <p>
-A UX research project exploring user coffee habits,
-preferences, and daily routines. Through persona creation
-and market research, the artCoffee app creates a personalized
-coffee delivery experience based on user needs.
+A user research project exploring coffee habits,
+preferences, and personalized digital experiences
+through the artCoffee application.
 </p>
 
 
+<div class="skills">
 
-<span>
-UX Research | Personas | User Journey Mapping
-</span>
+UX Research · Personas · User Journey
 
+</div>
 
 
 <a href="./morning_moods_ux.html">
-Click here to see the full case
-</a>
 
+Click here to see the full case
+
+</a>
 
 
 </div>
 
 
-</section>
+</article>
 
 
 
 
 
 
+<article class="project-card">
 
-<!-- The Third Eye -->
-
-
-<section class="project-card">
+<img src="../gallery/the_third_eye.jpg">
 
 
-<img src="../gallery/the_third_eye.jpg"
-alt="The Third Eye UX Project">
-
-
-
-<div class="project-content">
-
+<div class="project-info">
 
 <h2>
 The Third Eye
@@ -170,35 +169,35 @@ The Third Eye
 
 
 <h3>
-UX Design, User Flow & Branding
+UX Design & Branding
 </h3>
 
 
-
 <p>
-A UX and branding project focused on improving communication
-between customers and a photography business through clearer
-visual identity, improved user flow, and better customer
-interaction.
+Improving communication between customers and
+a photography business through research,
+branding, and clearer user flow.
 </p>
 
 
+<div class="skills">
 
-<span>
-UX Design | Branding | User Flow
-</span>
+UX Design · Branding · User Flow
 
+</div>
 
 
 <a href="./the_third_eye_ux.html">
+
 Click here to see the full case
+
 </a>
 
 
 </div>
 
 
-</section>
+</article>
 
 
 
@@ -206,21 +205,12 @@ Click here to see the full case
 
 
 
+<article class="project-card">
+
+<img src="../gallery/happy_employee.jpg">
 
 
-<!-- Happy Employee -->
-
-
-<section class="project-card">
-
-
-<img src="../gallery/happy_employee.jpg"
-alt="Happy Employee UX Project">
-
-
-
-<div class="project-content">
-
+<div class="project-info">
 
 <h2>
 Happy Employee
@@ -228,56 +218,47 @@ Happy Employee
 
 
 <h3>
-UX Research & Workflow Documentation
+UX Research & Workflow Design
 </h3>
 
 
-
 <p>
-A workplace UX research project analyzing employee onboarding
-challenges in a hospital supply chain department and identifying
-ways to improve training and workflow experiences.
+Analyzing employee onboarding challenges and
+creating opportunities for better workplace
+training experiences.
 </p>
 
 
+<div class="skills">
 
-<span>
-UX Research | Workflow Analysis | Documentation
-</span>
+Research · Workflow · Documentation
 
+</div>
 
 
 <a href="./a_happy_employee_ux.html">
+
 Click here to see the full case
+
 </a>
 
 
 </div>
 
 
-</section>
+</article>
 
 
 
 
 
 
+<article class="project-card">
+
+<img src="../gallery/meet.jpg">
 
 
-
-<!-- Meet Application -->
-
-
-<section class="project-card">
-
-
-<img src="../gallery/meet.jpg"
-alt="Meet Application UX Design">
-
-
-
-<div class="project-content">
-
+<div class="project-info">
 
 <h2>
 Meet Application
@@ -285,35 +266,35 @@ Meet Application
 
 
 <h3>
-Figma UX/UI Design & Branding
+Figma UX/UI & Branding
 </h3>
 
 
-
 <p>
-A mobile application concept designed to help people
-build meaningful social connections after moving to a new city.
-The project includes UX research, wireframes, Figma design,
-and brand development.
+A mobile application concept helping users
+create meaningful social connections after
+moving to a new city.
 </p>
 
 
+<div class="skills">
 
-<span>
-Figma | Mobile UX | Branding
-</span>
+Figma · Mobile UX · Branding
 
+</div>
 
 
 <a href="./figma_meet_app.html">
+
 Click here to see the full case
+
 </a>
 
 
 </div>
 
 
-</section>
+</article>
 
 
 
@@ -321,21 +302,12 @@ Click here to see the full case
 
 
 
+<article class="project-card">
+
+<img src="../gallery/BBQ.png">
 
 
-<!-- Chaim's Grill -->
-
-
-<section class="project-card">
-
-
-<img src="../gallery/BBQ.png"
-alt="Chaim's Grill Branding Project">
-
-
-
-<div class="project-content">
-
+<div class="project-info">
 
 <h2>
 Chaim's Grill
@@ -347,30 +319,30 @@ Brand Identity Design
 </h3>
 
 
-
 <p>
-A complete branding project developed for a BBQ business,
-including logo creation, visual identity, and menu designs
-created with Canva and Photoshop.
+A complete branding project including logo,
+visual identity, and menu design for a BBQ business.
 </p>
 
 
+<div class="skills">
 
-<span>
-Branding | Canva | Photoshop
-</span>
+Branding · Photoshop · Canva
 
+</div>
 
 
 <a href="./bbq.html">
+
 Click here to see the full case
+
 </a>
 
 
 </div>
 
 
-</section>
+</article>
 
 
 
@@ -378,21 +350,12 @@ Click here to see the full case
 
 
 
+<article class="project-card">
+
+<img src="../gallery/pizza.png">
 
 
-<!-- Miguel Pizza -->
-
-
-<section class="project-card">
-
-
-<img src="../gallery/pizza.png"
-alt="Pizza UX Project">
-
-
-
-<div class="project-content">
-
+<div class="project-info">
 
 <h2>
 Miguel Wants Pizza!!
@@ -400,34 +363,34 @@ Miguel Wants Pizza!!
 
 
 <h3>
-UX Research, Persona & Customer Journey Design
+UX Research & Customer Journey
 </h3>
 
 
-
 <p>
-A UX research project analyzing online pizza ordering behavior.
-The project identifies customer pain points related to pricing,
-rewards, registration, and guest checkout experiences.
+A UX study analyzing online ordering behavior,
+pricing clarity, and customer pain points.
 </p>
 
 
+<div class="skills">
 
-<span>
-UX Research | Persona | Customer Journey
-</span>
+Persona · Research · UX Strategy
 
+</div>
 
 
 <a href="./pizza.html">
+
 Click here to see the full case
+
 </a>
 
 
 </div>
 
 
-</section>
+</article>
 
 
 
@@ -436,20 +399,12 @@ Click here to see the full case
 
 
 
+<article class="project-card">
 
-<!-- Washtenaw Wings -->
-
-
-<section class="project-card">
+<img src="../gallery/washtenaw_wings.jpg">
 
 
-<img src="../gallery/washtenaw_wings.jpg"
-alt="Washtenaw Wings Web Development Project">
-
-
-
-<div class="project-content">
-
+<div class="project-info">
 
 <h2>
 Washtenaw Wings
@@ -457,41 +412,39 @@ Washtenaw Wings
 
 
 <h3>
-Web Development & Digital Experience
+Web Development
 </h3>
 
 
-
 <p>
-A web development project created for bird-watching enthusiasts.
-The project combines visual design with HTML, CSS, and GitHub
-development to create an engaging digital experience.
+A digital experience combining visual design
+with HTML, CSS, and GitHub development.
 </p>
 
 
+<div class="skills">
 
-<span>
-HTML | CSS | GitHub | Web Design
-</span>
+HTML · CSS · GitHub
 
+</div>
 
 
 <a href="./birds.html">
+
 Click here to see the full case
+
 </a>
 
 
 </div>
 
 
-</section>
+</article>
 
 
 
 
-
-</div>
-
+</main>
 
 
 
@@ -500,21 +453,18 @@ Click here to see the full case
 
 <footer>
 
-
 <p>
 
-<a href="https://www.linkedin.com/in/israel-shriki-858525204/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BggV%2Bo58vTz%2BYU9LCUr%2BDUg%3D%3D">
-Linkedin
+<a href="https://www.linkedin.com/in/israel-shriki-858525204/">
+LinkedIn
 </a>
-
 
 &nbsp;&nbsp;
 
 
-<a href="https://www.canva.com/design/DAHBHkyL3Y0/jo77elRkLcZVMUSRtFGcJg/edit?utm_content=DAHBHkyL3Y0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+<a href="https://www.canva.com/">
 Resume
 </a>
-
 
 &nbsp;&nbsp;
 
@@ -523,21 +473,13 @@ Resume
 Contact
 </a>
 
-
 &nbsp;&nbsp;
 
 
-Srulik Shriki
-
-
-&nbsp;&nbsp;
-
-
-&copy; Copyright 2025
+Srulik Shriki © 2025
 
 
 </p>
-
 
 </footer>
 
