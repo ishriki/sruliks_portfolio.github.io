@@ -6,6 +6,7 @@
 }
 
 
+
 body {
 
     margin: 0;
@@ -32,6 +33,21 @@ body {
     line-height: 22px;
 
     color: #222;
+
+}
+
+
+
+/* =========================
+   GLOBAL HEADINGS
+========================= */
+
+
+h1,
+h2,
+h3 {
+
+    color: black;
 
 }
 
@@ -69,7 +85,6 @@ header {
     width: 200px;
 
 }
-
 
 
 
@@ -150,6 +165,7 @@ header {
 
 
 
+
 /* =========================
    PROJECT GRID
 ========================= */
@@ -168,6 +184,7 @@ header {
     gap: 40px;
 
 }
+
 
 
 
@@ -232,7 +249,39 @@ header {
 
     display: block;
 
+
+    /*
+    Creates a unified visual style
+    across all project thumbnails
+    */
+
+    filter:
+    sepia(8%)
+    saturate(90%)
+    contrast(105%);
+
+
+    transition:
+    filter .4s ease,
+    transform .4s ease;
+
 }
+
+
+
+
+.project-card:hover img {
+
+    filter:
+    sepia(0%)
+    saturate(100%)
+    contrast(105%);
+
+
+    transform: scale(1.03);
+
+}
+
 
 
 
@@ -259,9 +308,10 @@ header {
 
 
 
+
 .project-info h2 {
 
-    color:#54210F;
+    color:black;
 
     font-size:28px;
 
@@ -275,6 +325,8 @@ header {
 
 
 .project-info h3 {
+
+    color:black;
 
     font-size:17px;
 
@@ -319,6 +371,7 @@ header {
 
 
 
+
 /* =========================
    CTA BUTTON
 ========================= */
@@ -349,13 +402,15 @@ header {
 
 
 
+
 .project-info a:hover {
 
-    background:#54210F;
+    background:#536018;
 
     color:white;
 
 }
+
 
 
 
@@ -391,9 +446,10 @@ footer a {
 
 footer a:hover {
 
-    color:gray;
+    color:#536018;
 
 }
+
 
 
 
