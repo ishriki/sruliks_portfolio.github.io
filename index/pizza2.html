@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Srulik Shriki | UX/UI Portfolio</title>
+  <link rel="stylesheet" href="pizza2.css">
+  <link rel="icon" href="../gallery/logo_favicon.jpg">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FZ7TBWH7V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config','G-4FZ7TBWH7V');
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <img src="../gallery/logo.jpg" class="logo" alt="Srulik Shriki Logo">
+      <nav class="navbar">
+        <a href="ann_arbor_spark.html">Marketing</a>
+        <a href="ux.html">UX</a>
+        <a href="graphic_communication.html">Graphic Communication</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+<div class="container">
+
+    <!-- CASE HEADER SECTION -->
+    <header class="case-header">
+        <div class="header-meta">
+            <span>Complex Project</span>
+            <span>•</span>
+            <span>March 21, 2026</span>
+        </div>
+        <h1>User Experience & Graphic Communication Project</h1>
+        <div class="author-info">Author: Srulik Shriki</div>
+    </header>
+
+    <!-- CASE SCENARIO -->
+    <section class="scenario-box">
+        <h2>Case Scenario</h2>
+        <p><strong>Persona Profile:</strong> Miguel is a guest shopper in the Ypsilanti, MI area. He enjoys ordering pizza on Friday evenings and experimenting with local varieties. As a guest shopper, he prefers ordering online without account registration and opting for pickup to reduce delivery costs.</p>
+        <p><strong>Core Need:</strong> Because Miguel is a full-time student working a part-time job, price transparency and clear reward breakdowns are essential. He needs to know exactly what he is paying for and why at every step of the transaction.</p>
+    </section>
+
+    <!-- STEP 1 -->
+    <article class="step-card">
+        <span class="step-badge">FIRST STEP</span>
+        <h2 class="step-title">Choosing the Branch Location</h2>
+        
+        <div class="issue-tag">Issue: Lack of Information</div>
+        
+        <p><strong>Scenario:</strong> Selecting the branch location. There is only <em>one</em> explicit instance where the user can view the full street address of the pickup branch at the start of the ordering process. In all subsequent screens, the UI displays only the city name, state, and ZIP code—omitting the street name and building number.</p>
+        
+        <p><strong>User Friction:</strong> When Miguel ordered as a guest user, he couldn't verify the exact store address for pickup. This forced him to make an unnecessary phone call to the store immediately after placing his order.</p>
+        
+        <p><strong>Operational Impact:</strong> When calling, Miguel attempted to provide an order reference, but no order number was present on his receipt. The store employee had to read through active screen orders line-by-line, matching item lists and price totals manually to identify his order.</p>
+
+        <div class="image-container">
+            <img src="../gallery/Jet's_Pizza-branch_location_ui_missing_street_address(1).png" alt="Jet's Pizza branch location UI showing missing street address">
+            <div class="caption">*Screenshot taken from Jet’s Pizza website.</div>
+        </div>
+    </article>
+
+    <!-- STEP 2 -->
+    <article class="step-card">
+        <span class="step-badge">SECOND STEP</span>
+        <h2 class="step-title">Choosing My Meal</h2>
+        
+        <div class="issue-tag">Issue: Clarity</div>
+        
+        <p><strong>Scenario:</strong> Miguel selects the "Large Combo" item.</p>
+        
+        <ul>
+            <li><strong>Visual Representation:</strong> The item photo displays three items next to the title "Large Combo" (pizza, breadsticks, and a drink) priced at $25.99.</li>
+            <li><strong>Text Description:</strong> The description reads: <em>"Large Pizza with Premium Mozzarella & 1 Topping, Choice of Bread, & a 2-Liter Coca-Cola Product $25.99."</em></li>
+            <li><strong>Ambiguity:</strong> The description creates uncertainty regarding whether a bread side is included. The phrasing <em>"Choice of Bread"</em> easily reads as a standalone bread side rather than an option to select pizza dough type.</li>
+        </ul>
+
+        <div class="grid-2col">
+            <div class="image-container">
+                <img src="../gallery/original_large_combo_ui(2).png" alt="Original Large Combo UI">
+                <div class="caption">*Original screenshot from Jet’s Pizza website.</div>
+            </div>
+            <div class="image-container">
+                <img src="../gallery/modified_large_combo_ui_suggestion(3).png" alt="Modified Large Combo UI suggestion">
+                <div class="caption">*Modified design suggestion shared with stakeholders.</div>
+            </div>
+        </div>
+    </article>
+
+    <!-- STEP 3 -->
+    <article class="step-card">
+        <span class="step-badge">THIRD STEP</span>
+        <h2 class="step-title">Building Your Own - Building the Pizza</h2>
+        
+        <div class="issue-tag">Issue: Price Clarity</div>
+        
+        <p><strong>Scenario:</strong> The base Large Combo includes Premium Mozzarella cheese, 1 topping, and crust selection within the total combo cost. Additional toppings incur an extra fee.</p>
+        
+        <p>Miguel selects pepperoni and jalapeños. During selection, the UI displays positive incremental charges for both meat and veggie additions (+$1.98 × 2). The included drink is also displayed with an added charge indicator (+1.30).</p>
+
+        <div class="image-container">
+            <img src="../gallery/build_your_own_1(4).png" alt="Build Your Own Pizza order screens showing incremental charges">
+            <div class="caption">*Screenshots taken from Jet’s Pizza website.</div>
+        </div>
+		 <div class="image-container">
+            <img src="../gallery/build_your_own_2(5).png" alt="Build Your Own Pizza order screens showing incremental charges">
+            <div class="caption">*Screenshots taken from Jet’s Pizza website.</div>
+        </div>
+		 <div class="image-container">
+            <img src="../gallery/build_your_own_3(6).png" alt="Build Your Own Pizza order screens showing incremental charges">
+            <div class="caption">*Screenshots taken from Jet’s Pizza website.</div>
+        </div>
+
+        <p><strong>Confusion:</strong> Because the combo explicitly includes 1 topping and a drink, seeing `+$1.98` twice and `+$1.30` leads Miguel to assume the final price will be higher than advertised. This triggers confusion and anxiety during checkout.</p>
+
+        <div class="suggestion-tag">Suggestion: Price Transparency</div>
+        <p>To communicate value without inducing sticker shock, display base-included items as `$0` or use explicit negative discount indicators (e.g., *"Discounted combo -$1.30"* or *"Included in combo ($0)"*). Reserve positive modifiers (`+`) strictly for extra add-ons beyond the combo package.</p>
+
+        <div class="image-container">
+            <img src="../gallery/drink_pricing_selection_ui(7).png" alt="Drink pricing selection UI">
+            <div class="caption">*Modified suggestion showing discount alignment.</div>
+        </div>
+
+        <hr style="margin: 2rem 0; border: 0; border-top: 1px solid var(--border-color);">
+
+        <div class="issue-tag">Issue: Orientation & Navigation Comfort</div>
+        <p>A standalone chevron arrow (`>`) is used to modify crust options without descriptive text labeling.</p>
+
+        <div class="suggestion-tag">Suggestion: Navigation Clarity</div>
+        <p>Add descriptive action copy alongside the arrow (e.g., *"Change bread choice here"*). Additionally, clarify topping costs directly by visually separating the included first topping from the charged second topping.</p>
+
+        <div class="grid-2col">
+            <div class="image-container">
+                <img src="../gallery/original_crust_navigation_menu(8).png" alt="Original crust navigation menu">
+                <div class="caption">*Original UI navigation.</div>
+            </div>
+            <div class="image-container">
+                <img src="../gallery/suggested_crust_navigation_menu_with_explicit_labels(9).png" alt="Suggested crust navigation menu with explicit labels">
+                <div class="caption">*Suggested UI navigation.</div>
+            </div>
+        </div>
+
+        <p><strong>Crust Selection Scenario:</strong> Clicking the crust selection dropdown leads to additional user hesitation:</p>
+        <ul>
+            <li>Uncertainty whether modifying crust style incurs an added fee.</li>
+            <li>Ambiguity regarding the primary CTA destination ("Save Options").</li>
+            <li>Poor placement of the "Go-back" arrow, positioned far from the focal area.</li>
+        </ul>
+
+        <div class="suggestion-tag">Proposed Interface Enhancements</div>
+        <ol>
+            <li>Display `$0` next to standard crust options to confirm inclusion.</li>
+            <li>Add explicit text: *"First topping discounted -$1.98"*.</li>
+            <li>Update CTA copy to: *"Save Options & Proceed Your Order"* to confirm progress retention.</li>
+            <li>Remove confusing/redundant back links that suggest starting over.</li>
+        </ol>
+
+        <div class="image-container">
+            <img src="../gallery/redesigned_build_your_own_pizza_screen(10).png" alt="Redesigned Build Your Own Pizza Screen">
+            <div class="caption">*Redesigned interface addressing orientation, feedback, and pricing clarity.</div>
+        </div>
+    </article>
+
+    <!-- STEP 4 -->
+    <article class="step-card">
+        <span class="step-badge">FINAL STEP</span>
+        <h2 class="step-title">Receipt - It’s All About TRUST!</h2>
+        
+        <p>For Miguel, the post-purchase receipt serves as a primary verification artifact. It must clearly display an order summary, price breakdown, unique order number, store address, and brand markers to instill confidence.</p>
+
+        <div class="issue-tag">Key Usability Breaches Identified</div>
+        
+        <p><strong>Branding:</strong> Lack of brand logo and styling makes emailed receipts look untrustworthy or like spam.</p>
+        <p><strong>Organization:</strong> Linear vertical list formatting creates heavy scanning friction; missing order number and client name hinder store pickup operations.</p>
+        <p><strong>Unclarity:</strong></p>
+        <ul>
+            <li>Incomplete branch address ("Jet's Pizza Ypsilanti, MI 48197 MI-175").</li>
+            <li>Inconsistent base pricing display ($31.93 initial price vs. $25.99 combo base).</li>
+            <li>Omitted line items for extra topping charges.</li>
+            <li>Confusing discount arithmetic (-$3.96 deduction).</li>
+            <li>Cash payment selections display a total charged amount of `$0` without explicit "Pay at Store" status.</li>
+        </ul>
+
+        <div class="grid-2col">
+            <div class="image-container">
+                <img src="../gallery/original_jets_pizza_email_receipt(11).png" alt="Original Jet's Pizza Email Receipt">
+                <div class="caption">*Original email receipt received from Jet's Pizza.</div>
+            </div>
+            <div class="image-container">
+                <img src="../gallery/redisigned_jets_pizza_email_receipt(12).png" alt="Redesigned Jet's Pizza Email Receipt">
+                <div class="caption">*Redesigned receipt structure designed by Srulik Shriki.</div>
+            </div>
+        </div>
+    </article>
+
+</div>
+
+<footer>
+    <p>
+      <a href="https://www.linkedin.com/in/srulik-shriki-858525204/">LinkedIn</a>&nbsp;&nbsp;<a href="https://canva.link/yx0ch3mzbwve8dt">Resume</a>&nbsp;&nbsp;<a href="mailto:ishriki@emich.edu">Contact</a>&nbsp;&nbsp;Srulik Shriki © 2025
+    </p>
+</footer>
+
+</body>
+</html>
