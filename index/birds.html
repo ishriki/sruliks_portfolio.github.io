@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WEB DEV & Design | Washtenaw Wings</title>
+  <link rel="stylesheet" href="style_index.css">
+  <link rel="icon" href="../gallery/logo_favicon.jpg" type="image/png">
+
+  <!-- Custom inline tweaks for project image display inside grid cards -->
+  <style>
+    .project-card img.asset-img {
+      height: auto;
+      max-height: 480px;
+      object-fit: contain;
+      padding: 16px;
+      background-color: #fafafa;
+    }
+
+    .project-info .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: auto;
+    }
+
+    .project-info .btn-group a {
+      margin-top: 0;
+    }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FZ7TBWH7V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4FZ7TBWH7V');
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <a href="index.html">
+        <img src="../gallery/logo.png" class="logo" alt="Srulik Shriki Logo">
+      </a>
+      <nav class="navbar">
+        <a href="ann_arbor_spark.html">Marketing</a>
+        <a href="ux.html">UX</a>
+        <a href="graphic_communication.html">Graphic Communication</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>The Birds of Washtenaw Club</h1>
+    <p>Audience: Birds Watchers</p>
+  </section>
+
+  <!-- MAIN CONTENT GRID -->
+  <main class="projects">
+
+    <!-- PROJECT OVERVIEW & IMAGE SHOWCASE -->
+    <article class="project-card" style="grid-column: 1 / -1;">
+      <img src="../gallery/ux_washtenaw_birds.png" alt="Washtenaw Birds Web Design" class="asset-img">
+      <div class="project-info">
+        <h2>Audience: Birds Watchers</h2>
+        <h3>The Birds of Washtenaw Club</h3>
+        <p>A web development and visual design project created to connect bird-watching enthusiasts in Washtenaw with accessible resources and interactive digital design layouts.</p>
+      </div>
+    </article>
+
+    <!-- WEB DESIGN (ADOBE & CANVA) -->
+    <article class="project-card">
+      <div class="project-info">
+        <h2>Web Design</h2>
+        <h3>Adobe and Canva</h3>
+        <p>Visual UI prototypes and design concepts created with Adobe tools and Canva.</p>
+        <div class="skills">Adobe · Canva · Web Design</div>
+        <div class="btn-group">
+          <a href="https://canva.link/endr1lsaxwj23zp" target="_blank" rel="noopener noreferrer">Click here to see version 1</a>
+          <a href="https://canva.link/14dluc9cklaux88" target="_blank" rel="noopener noreferrer">Click here to see version 2</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ADVANCED PROJECT (WEB DEV) -->
+    <article class="project-card">
+      <div class="project-info">
+        <h2>Advanced Project</h2>
+        <h3>HTML, CSS, and GitHub</h3>
+        <p>Full web development implementation built using responsive HTML and CSS, deployed live on GitHub Pages.</p>
+        <div class="skills">HTML · CSS · GitHub</div>
+        <div class="btn-group">
+          <a href="https://ishriki.github.io/birdsow.github.io/index/index.html" target="_blank" rel="noopener noreferrer">Click here to see version 1</a>
+          <a href="https://ishriki.github.io/birdsofwashtenaw.github.io/index/index1.html" target="_blank" rel="noopener noreferrer">Click here to see version 2</a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <a href="https://www.linkedin.com/in/israel-shriki-858525204/" target="_blank" rel="noopener noreferrer">LinkedIn</a>&nbsp;&nbsp;
+      <a href="https://canva.link/yx0ch3mzbwve8dt" target="_blank" rel="noopener noreferrer">Resume</a>&nbsp;&nbsp;
+      <a href="mailto:ishriki@emich.edu">Contact</a>&nbsp;&nbsp;
+      Srulik Shriki © 2025
+    </p>
+  </footer>
+
+</body>
+</html>
